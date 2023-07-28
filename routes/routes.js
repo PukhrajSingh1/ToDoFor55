@@ -1,7 +1,6 @@
 const express = require("express");
-const Model = require("../model/model");
+const Model = require("../Appli/model/model");
 const router = express.Router();
-//Post Method
 router.post("/post", async (req, res) => {
   const data = new Model({
     task: req.body.task,
